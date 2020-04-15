@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f9f9f9; 
+        }
+        #container{
+            width: 700;
+            margin: 0 auto;
+        }
+        #chat-window{
+            height: 300;
+        }
+        #main-wrapper{
+        }
+        #chat-wrapper{
+            float: left;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f4f4f4;
+            padding: 10px;
+        }
+        #user-wrapper{
+            float: left;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f4f4f4;
+            padding: 10px;
+            margin-left: 20px;
+            width: 150px;
+            max-height: 200px;
+        }
+        #names-wrapper{
+            float: left;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f4f4f4;
+            padding: 10px;
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="names-wrapper">
+            <h2>Chat IO</h2>
+            <p>Create username:</p>
+            <form id="userNameForm">
+                <input type="text" size="35" name="username">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="main-wrapper">
+            <h2>Chat IO</h2>
+            <div id="chat-wrapper">
+                <div id="chat-window">
+                    <form action="" id="msgForm"> 
+                        <input type="text" size="35" name="message" placeholder="Type something ....">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <div id="user-wrapper">
+                <div id="users"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
